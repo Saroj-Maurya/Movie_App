@@ -1,0 +1,21 @@
+.movie_list {
+  padding: 0 3rem 3rem 3rem;
+  background: #030014;
+}
+
+.list_title {
+  font-size: 1.75rem;
+  padding: 2.5rem 2.5rem 2.5rem 3rem;
+  font-family: DM Sans;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.list_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

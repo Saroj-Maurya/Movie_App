@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Satisfy&display=swap");
+
+.header {
+  background-color: #0F0D23;
+  margin: 0 -0.5rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  /* box-shadow: 0px 12px 32px 0px #CECEFB05 inset;
+
+box-shadow: 0px 0px 100px 0px #AB8BFF4D; */
+
+
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+a > span {
+  font-family: DM Sans;
+  margin: 0 30px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 46.87px;
+  letter-spacing: 0%;
+}
+
+#movie {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: -1%;
+  text-align: center;
+
+  background: -webkit-linear-gradient(#d6c7ff, #ab8bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a > span:hover {
+    color: #ab8bff;
+}
+
+.header__icon {
+    width: 80px;
+    cursor: pointer;
+}
+
+.user__avatar {
+    font-size: 2rem;
+}
