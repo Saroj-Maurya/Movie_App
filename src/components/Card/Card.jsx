@@ -40,7 +40,7 @@ const Card = ({ movie }) => {
               <h3>
                 {movie ? (
                   <>
-                    {movie.original_title.length > 20
+                    {movie.original_title.length > 10
                       ? movie.original_title.slice(0, 20) + "..."
                       : movie.original_title}
                   </>

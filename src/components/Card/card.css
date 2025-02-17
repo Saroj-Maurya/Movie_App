@@ -95,6 +95,7 @@
   width: 200px;
   height: 183px;
   border-radius: 16px;
+  object-fit: cover;
 }
 
 .cards_title {
