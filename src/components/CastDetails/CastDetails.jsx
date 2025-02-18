@@ -1,11 +1,12 @@
 import React from 'react'
 import "./castdetails.css";
+import { imageURL } from "../../config";
 
 const Castdetails = ({cast}) => {
   return (
     <div className="cast-details"> 
         <div>
-        <img src={`https://image.tmdb.org/t/p/w500${cast.profile_path}`} alt="" />
+        <img src={`${imageURL}/${cast.profile_path}`} alt="" />
         </div>
         <div>
         <h3>{cast.name}</h3>

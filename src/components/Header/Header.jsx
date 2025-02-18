@@ -6,20 +6,17 @@ import { Form, FormControl, Button } from "react-bootstrap";
 import search from "../../assets/search.svg"
 
 const Header = () => {
-  // const { search_movie, setSearch_movie } = useContext(AppContext);
-  const [search_movie, setSearch_movie] = useState("");
+ 
+  const [searchMovie, setSearchMovie] = useState("");
   const navigate = useNavigate();
 
   const handleSearchChange = (event) => {
-    setSearch_movie(event.target.value);
-    // setSearchTerm(event.target.value);
+    setSearchMovie(event.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // setSearchTerm(search_movie);
-    // console.log(search_movie);
-    navigate(`/search?${search_movie}`);
+    navigate(`/search?${searchMovie}`);
   };
 
   return (
@@ -45,7 +42,7 @@ const Header = () => {
             placeholder="Movie Search"
             className="search"
             aria-label="search"
-            value={search_movie}
+            value={searchMovie}
             onChange={handleSearchChange}
           ></FormControl>
           <Button className="search-button" variant="secondary" type="submit">

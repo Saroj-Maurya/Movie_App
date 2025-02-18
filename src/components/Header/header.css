@@ -86,12 +86,12 @@ a > span:hover {
 
 
 @media (max-width: 768px) {
-  body, html {
+  /* body, html {
     margin: 0;
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
-  }
+  } */
 
   .header {
     width: 100vw;
@@ -159,7 +159,7 @@ a > span:hover {
   }
 
   .headerRight {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
 }
