@@ -4,14 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 31.19rem;
+  /* gap: 31.19rem; */
 }
 
 .pagination-container button {
   background: #0f0d23;
   width: 56px;
   height: 56px;
-  gap: 12px;
+  /* gap: 12px; */
   border-radius: 8px;
   padding: 18px;
   border: none;
@@ -20,11 +20,15 @@
   backdrop-filter: blur(16px);
 }
 
-.page-no {
+.button {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 20px;
   color: #ffffff;
+}
+
+button.active {
+  color: blueviolet;
 }
 
 @media (max-width: 1024px) {
