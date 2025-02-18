@@ -40,7 +40,7 @@ const Card = ({ movie }) => {
               <h3>
                 {movie ? (
                   <>
-                    {movie.original_title.length > 10
+                    {movie.original_title.length > 5
                       ? movie.original_title.slice(0, 20) + "..."
                       : movie.original_title}
                   </>
@@ -63,11 +63,6 @@ const Card = ({ movie }) => {
                 </p>
               </div>
 
-              {/* <div className="cards_runtime">
-                        {movie?movie.release_date:""}
-                        <span className="card_rating">{movie?movie.vote_average:""}<i className="fas fa-star" /></span>
-                    </div>
-                    <div className="cards_description">{movie?movie.overview: ""}</div> */}
             </div>
           </div>
         </Link>

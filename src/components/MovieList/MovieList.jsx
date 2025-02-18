@@ -10,7 +10,6 @@ const MovieList = () => {
   const { type } = useParams();
   const [currentPage, setCurrentPage] = useState(1);
 
-
   const getData = (type) => {
     fetch(
       `${apiUrl}/movie/${
@@ -27,17 +26,17 @@ const MovieList = () => {
 
   return (
     <>
-    <div className="movie_list">
-      <h2 className="list_title">{(type ? type : "POPULAR").toUpperCase()}</h2>
-      <div className="list_cards">
-        {movieList.map((movie) => (
-          <Card key={movie.id} movie={movie} />
-        ))}
+      <div className="movie_list">
+        <h2 className="list_title">
+          {(type ? type : "POPULAR").toUpperCase()}
+        </h2>
+        <div className="list_cards">
+          {movieList.map((movie) => (
+            <Card key={movie.id} movie={movie} />
+          ))}
+        </div>
       </div>
-    </div>
-      <Pagination
-      setCurrentPage={setCurrentPage} currentPage={currentPage}
-    />
+      <Pagination setCurrentPage={setCurrentPage} currentPage={currentPage} />
     </>
   );
 };

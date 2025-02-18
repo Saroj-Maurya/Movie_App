@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import "./pagination.css"
+import leftarrow from "../../assets/left-arrow.svg"
+import rightarrow from "../../assets/right-arrow.svg"
+
+
 
 const Pagination = ({ setCurrentPage, currentPage }) => {
-
   const nextPage = () => {
     setCurrentPage(currentPage + 1);
   };
@@ -11,22 +15,19 @@ const Pagination = ({ setCurrentPage, currentPage }) => {
   };
 
   return (
-    <div className="flex justify-center space-x-2 mt-4">
+    <div className="pagination-container">
       <button
-        className="px-3 py-1 bg-gray-200 rounded disabled:opacity-50"
+        className="prev-button"
         onClick={() => previousPage(currentPage)}
         disabled={currentPage === 1}
       >
-        Prev
+        <img src={leftarrow} alt="Prev" />
       </button>
 
-      <h1>{currentPage}</h1>
+      <h1 className="page-no">{currentPage}</h1>
 
-      <button
-        className="px-3 py-1 bg-gray-200 rounded disabled:opacity-50"
-        onClick={() => nextPage(currentPage)}
-      >
-        Next
+      <button className="next-button" onClick={() => nextPage(currentPage)}>
+        <img src={rightarrow} alt="Next" />
       </button>
     </div>
   );

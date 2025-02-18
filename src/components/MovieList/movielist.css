@@ -1,6 +1,7 @@
 .movie_list {
   padding: 0 3rem 3rem 3rem;
   background: #030014;
+  width: fit-content;
 }
 
 .list_title {
@@ -16,6 +17,7 @@
 .list_cards {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
   gap: 20px;
 }
